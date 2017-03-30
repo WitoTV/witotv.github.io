@@ -1,0 +1,28 @@
+{
+  "name": "witotv.github.io",
+  "version": "1.0.0",
+  "description": "This is my portfolio page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WitoTV/witotv.github.io.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "js",
+    "webpack",
+    "npm",
+    "portfolio",
+    "scss"
+  ],
+  "author": "Witold Budzioch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WitoTV/witotv.github.io/issues"
+  },
+  "homepage": "https://github.com/WitoTV/witotv.github.io#readme"
+}

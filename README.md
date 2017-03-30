@@ -1,1 +1,1 @@
-Branch?
+This is my portfolio, on branch master you can see everything builded. This branch is just a application to compile it.
