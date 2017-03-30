@@ -1,0 +1,6 @@
+<li *ngFor="let item of items" >
+    <a href="#" [routerLink]="item.routerLink" >
+        {{item.label}}
+    </a>
+</li>
+<router-outlet></router-outlet>

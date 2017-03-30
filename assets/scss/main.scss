@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'variables/variables';
+@import 'reset/reset';
+@import 'loader/loader';
+
+body {
+    color: $primary-color;
+    //background-color: $secondary-color;
+}
