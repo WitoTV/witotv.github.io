@@ -37,6 +37,7 @@ var AboutComponent = (function () {
     AboutComponent.prototype.ngOnInit = function () { };
     AboutComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+            selector: 'app-about-page',
             template: __webpack_require__(305),
             styles: [__webpack_require__(300)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
@@ -72,6 +73,7 @@ var ContactComponent = (function () {
     ContactComponent.prototype.ngOnInit = function () { };
     ContactComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+            selector: 'app-contact-page',
             template: __webpack_require__(306),
             styles: [__webpack_require__(301)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
@@ -107,6 +109,7 @@ var HomeComponent = (function () {
     HomeComponent.prototype.ngOnInit = function () { };
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+            selector: 'app-home-page',
             template: __webpack_require__(307),
             styles: [__webpack_require__(302)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
@@ -142,6 +145,7 @@ var KnowledgeComponent = (function () {
     KnowledgeComponent.prototype.ngOnInit = function () { };
     KnowledgeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+            selector: 'app-knowledge-page',
             template: __webpack_require__(308),
             styles: [__webpack_require__(303)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
@@ -177,6 +181,7 @@ var PortfolioComponent = (function () {
     PortfolioComponent.prototype.ngOnInit = function () { };
     PortfolioComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
+            selector: 'app-portfolio-page',
             template: __webpack_require__(309),
             styles: [__webpack_require__(304)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
@@ -239,12 +244,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(386);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_app_modules__ = __webpack_require__(295);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(293);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment_prod__ = __webpack_require__(293);
 
 
 
 
-if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment */].production) {
+if (__WEBPACK_IMPORTED_MODULE_3__environments_environment_prod__["a" /* environment */].production) {
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["a" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_2__modules_app_modules__["a" /* AppModule */]);
@@ -257,14 +262,10 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
-// The file contents for the current environment will overwrite these during build.
-// The build system defaults to the dev environment which uses `environment.ts`, but if you do
-// `ng build --env=prod` then `environment.prod.ts` will be used instead.
-// The list of which env maps to which file can be found in `.angular-cli.json`.
 var environment = {
-    production: false
+    production: true
 };
-//# sourceMappingURL=environment.js.map
+//# sourceMappingURL=environment.prod.js.map
 
 /***/ }),
 
@@ -360,11 +361,11 @@ var AppModule = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(102);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__page_routing__ = __webpack_require__(297);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home_component__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__about_about_component__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__knowledge_knowledge_component__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__portfolio_portfolio_component__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_home_home_component__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_about_about_component__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_knowledge_knowledge_component__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_portfolio_portfolio_component__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_contact_contact_component__ = __webpack_require__(183);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PageModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -389,23 +390,23 @@ var PageModule = (function () {
     PageModule = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__about_about_component__["a" /* AboutComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__knowledge_knowledge_component__["a" /* KnowledgeComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__portfolio_portfolio_component__["a" /* PortfolioComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__knowledge_knowledge_component__["a" /* KnowledgeComponent */]
+                __WEBPACK_IMPORTED_MODULE_3__components_home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_4__components_about_about_component__["a" /* AboutComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__components_knowledge_knowledge_component__["a" /* KnowledgeComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__components_portfolio_portfolio_component__["a" /* PortfolioComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__components_contact_contact_component__["a" /* ContactComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__components_knowledge_knowledge_component__["a" /* KnowledgeComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(__WEBPACK_IMPORTED_MODULE_2__page_routing__["a" /* RoutingConfig */])
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */],
-                __WEBPACK_IMPORTED_MODULE_4__about_about_component__["a" /* AboutComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__knowledge_knowledge_component__["a" /* KnowledgeComponent */],
-                __WEBPACK_IMPORTED_MODULE_6__portfolio_portfolio_component__["a" /* PortfolioComponent */],
-                __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_5__knowledge_knowledge_component__["a" /* KnowledgeComponent */]
+                __WEBPACK_IMPORTED_MODULE_3__components_home_home_component__["a" /* HomeComponent */],
+                __WEBPACK_IMPORTED_MODULE_4__components_about_about_component__["a" /* AboutComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__components_knowledge_knowledge_component__["a" /* KnowledgeComponent */],
+                __WEBPACK_IMPORTED_MODULE_6__components_portfolio_portfolio_component__["a" /* PortfolioComponent */],
+                __WEBPACK_IMPORTED_MODULE_7__components_contact_contact_component__["a" /* ContactComponent */],
+                __WEBPACK_IMPORTED_MODULE_5__components_knowledge_knowledge_component__["a" /* KnowledgeComponent */]
             ],
             providers: []
         }), 
@@ -421,11 +422,11 @@ var PageModule = (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_home_component__ = __webpack_require__(184);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__about_about_component__ = __webpack_require__(182);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__knowledge_knowledge_component__ = __webpack_require__(185);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__portfolio_portfolio_component__ = __webpack_require__(186);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__contact_contact_component__ = __webpack_require__(183);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_home_home_component__ = __webpack_require__(184);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_about_about_component__ = __webpack_require__(182);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_knowledge_knowledge_component__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_portfolio_portfolio_component__ = __webpack_require__(186);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_contact_contact_component__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__share_tabs_tabs_component__ = __webpack_require__(187);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RoutingConfig; });
 
@@ -439,23 +440,23 @@ var RoutingConfig = [
         children: [
             {
                 path: '',
-                component: __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_0__components_home_home_component__["a" /* HomeComponent */]
             },
             {
                 path: 'about',
-                component: __WEBPACK_IMPORTED_MODULE_1__about_about_component__["a" /* AboutComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_1__components_about_about_component__["a" /* AboutComponent */]
             },
             {
                 path: 'knowledge',
-                component: __WEBPACK_IMPORTED_MODULE_2__knowledge_knowledge_component__["a" /* KnowledgeComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_2__components_knowledge_knowledge_component__["a" /* KnowledgeComponent */]
             },
             {
                 path: 'portfolio',
-                component: __WEBPACK_IMPORTED_MODULE_3__portfolio_portfolio_component__["a" /* PortfolioComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_3__components_portfolio_portfolio_component__["a" /* PortfolioComponent */]
             },
             {
                 path: 'contact',
-                component: __WEBPACK_IMPORTED_MODULE_4__contact_contact_component__["a" /* ContactComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_4__components_contact_contact_component__["a" /* ContactComponent */]
             },
             {
                 path: '**',
@@ -668,7 +669,7 @@ module.exports = "<h1>\r\n    {{title}}\r\n</h1>"
 /***/ 310:
 /***/ (function(module, exports) {
 
-module.exports = "<li *ngFor=\"let item of items\" >\r\n    <a href=\"#\" [routerLink]=\"item.routerLink\" >\r\n        {{item.label}}\r\n    </a>\r\n</li>\r\n<router-outlet></router-outlet>"
+module.exports = "<li *ngFor=\"let item of items\" >\r\n    <a href=\"#\" [routerLink]=\"item.routerLink\" [routerLinkActive]=\"['active']\">\r\n        {{item.label}}\r\n    </a>\r\n</li>\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
