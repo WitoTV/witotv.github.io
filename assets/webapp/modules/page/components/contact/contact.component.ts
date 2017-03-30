@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 
 @Component({
+  selector: 'app-contact-page',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss'],
   encapsulation: ViewEncapsulation.None

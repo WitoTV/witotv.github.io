@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 
 @Component({
+  selector: 'app-portfolio-page',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.scss'],
   encapsulation: ViewEncapsulation.None
