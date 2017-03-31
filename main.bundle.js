@@ -38,7 +38,7 @@ var AboutComponent = (function () {
     AboutComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
             selector: 'app-about-page',
-            template: __webpack_require__(305),
+            template: __webpack_require__(306),
             styles: [__webpack_require__(300)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
         }), 
@@ -74,7 +74,7 @@ var ContactComponent = (function () {
     ContactComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
             selector: 'app-contact-page',
-            template: __webpack_require__(306),
+            template: __webpack_require__(307),
             styles: [__webpack_require__(301)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
         }), 
@@ -110,7 +110,7 @@ var HomeComponent = (function () {
     HomeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
             selector: 'app-home-page',
-            template: __webpack_require__(307),
+            template: __webpack_require__(308),
             styles: [__webpack_require__(302)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
         }), 
@@ -146,7 +146,7 @@ var KnowledgeComponent = (function () {
     KnowledgeComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
             selector: 'app-knowledge-page',
-            template: __webpack_require__(308),
+            template: __webpack_require__(309),
             styles: [__webpack_require__(303)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
         }), 
@@ -182,7 +182,7 @@ var PortfolioComponent = (function () {
     PortfolioComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
             selector: 'app-portfolio-page',
-            template: __webpack_require__(309),
+            template: __webpack_require__(310),
             styles: [__webpack_require__(304)],
             encapsulation: __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* ViewEncapsulation */].None
         }), 
@@ -225,7 +225,7 @@ var TabViewComponent = (function () {
     TabViewComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* Component */])({
             selector: 'app-dashboard-tabs',
-            template: __webpack_require__(310)
+            template: __webpack_require__(305)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object])
     ], TabViewComponent);
@@ -634,42 +634,42 @@ module.exports = module.exports.toString();
 /***/ 305:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\r\n    {{title}}\r\n</h1>"
+module.exports = "<li *ngFor=\"let item of items\" >\r\n    <a href=\"#\" [routerLink]=\"item.routerLink\" [routerLinkActive]=\"['active']\">\r\n        {{item.label}}\r\n    </a>\r\n</li>\r\n<router-outlet></router-outlet>"
 
 /***/ }),
 
 /***/ 306:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\r\n    {{title}}\r\n</h1>"
+module.exports = "<h1>{{title}}</h1>"
 
 /***/ }),
 
 /***/ 307:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\r\n    {{title}}\r\n</h1>"
+module.exports = "<h1>{{title}}</h1>"
 
 /***/ }),
 
 /***/ 308:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\r\n    {{title}}\r\n</h1>"
+module.exports = "<h1>{{title}}</h1>"
 
 /***/ }),
 
 /***/ 309:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>\r\n    {{title}}\r\n</h1>"
+module.exports = "<h1>{{title}}</h1>"
 
 /***/ }),
 
 /***/ 310:
 /***/ (function(module, exports) {
 
-module.exports = "<li *ngFor=\"let item of items\" >\r\n    <a href=\"#\" [routerLink]=\"item.routerLink\" [routerLinkActive]=\"['active']\">\r\n        {{item.label}}\r\n    </a>\r\n</li>\r\n<router-outlet></router-outlet>"
+module.exports = "<h1>{{title}}</h1>"
 
 /***/ }),
 
