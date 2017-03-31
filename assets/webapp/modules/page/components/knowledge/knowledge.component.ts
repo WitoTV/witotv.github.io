@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-knowledge-page',
-  templateUrl: './knowledge.component.html',
+  templateUrl: './knowledge.component.pug',
   styleUrls: ['./knowledge.component.scss'],
   encapsulation: ViewEncapsulation.None
 })

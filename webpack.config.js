@@ -2,6 +2,7 @@ const path = require('path');
 const ProgressPlugin = require('webpack/lib/ProgressPlugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const PugWebpackPlugin = require('pug-loader');
 const autoprefixer = require('autoprefixer');
 const postcssUrl = require('postcss-url');
 
@@ -64,6 +65,14 @@ module.exports = {
         "test": /\.json$/,
         "loader": "json-loader"
       },
+      { 
+        test: /\.(pug|jade)$/, 
+        use: ['raw-loader', 'pug-html-loader'] 
+      },
+      {
+        "test": /\.(jpg|png|gif|otf|ttf|woff|woff2|cur|ani)$/,
+        "loader": "url-loader?name=[name].[hash:20].[ext]&limit=10000"
+      },
       {
         "test": /\.html$/,
         "loader": "raw-loader"
@@ -71,10 +80,6 @@ module.exports = {
       {
         "test": /\.(eot|svg)$/,
         "loader": "file-loader?name=[name].[hash:20].[ext]"
-      },
-      {
-        "test": /\.(jpg|png|gif|otf|ttf|woff|woff2|cur|ani)$/,
-        "loader": "url-loader?name=[name].[hash:20].[ext]&limit=10000"
       },
       {
         "exclude": [
@@ -105,13 +110,13 @@ module.exports = {
         ],
         "test": /\.css$/,
         "loaders": ExtractTextPlugin.extract({
-  "use": [
-    "css-loader?{\"sourceMap\":false,\"importLoaders\":1}",
-    "postcss-loader"
-  ],
-  "fallback": "style-loader",
-  "publicPath": ""
-})
+          "use": [
+            "css-loader?{\"sourceMap\":false,\"importLoaders\":1}",
+            "postcss-loader"
+          ],
+          "fallback": "style-loader",
+          "publicPath": ""
+        })
       },
       {
         "include": [
@@ -119,14 +124,14 @@ module.exports = {
         ],
         "test": /\.scss$|\.sass$/,
         "loaders": ExtractTextPlugin.extract({
-  "use": [
-    "css-loader?{\"sourceMap\":false,\"importLoaders\":1}",
-    "postcss-loader",
-    "sass-loader"
-  ],
-  "fallback": "style-loader",
-  "publicPath": ""
-})
+          "use": [
+            "css-loader?{\"sourceMap\":false,\"importLoaders\":1}",
+            "postcss-loader",
+            "sass-loader"
+          ],
+          "fallback": "style-loader",
+          "publicPath": ""
+        })
       },
       {
         "test": /\.ts$/,
@@ -141,7 +146,7 @@ module.exports = {
         "img"
       ],
       "globOptions": {
-        "cwd": "C:\\Users\\Witold\\Documents\\GitHub\\WitoCli - Copy\\assets",
+        "cwd": "./assets",
         "dot": true,
         "ignore": "**/.gitkeep"
       }

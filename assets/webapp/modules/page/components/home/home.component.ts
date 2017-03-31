@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home-page',
-  templateUrl: './home.component.html',
+  templateUrl: './home.component.pug',
   styleUrls: ['./home.component.scss'],
   encapsulation: ViewEncapsulation.None
 })
